@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background image */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 80px; /* Add padding to account for fixed header */
+  background-image: url('C:/Users/Student/Desktop/c_list_app/src/Assets/Background.jpg'); /* Use the uploaded image as the background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Navbar styling */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(224, 224, 224, 0.8); /* Slight transparency for the header */
+  border-bottom: 2px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+td {
+  background-color: rgb(245, 241, 241);
+}
+
+.dashboard {
+  font-size: 18px;
+}
+
+.search-bar {
+  padding: 8px;
+  border: 1px solid #96969600;
+  border-radius: 20px;
+}
+
+/* Center the content */
+.content {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  /* Transparent white background for the content */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.consultation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.consultation-table th, .consultation-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th{
+  color: white;
+  background-color: #284f61;
+}
+
+/* Button styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.back-button, .view-staff-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #284f61;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover, .view-staff-button:hover {
+  background-color: rgb(34, 182, 182);
+}
+
+/* Status cell styling */
+.status.in-progress {
+  color: orange;
+}
+
+.status.available {
+  color: green;
+}
+
+.down {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline-start: 360px;
+  padding-inline-end: 360px;
+  position: absolute;
+  bottom: 160px; /* Adjust the bottom position as needed */
+  left: 0;
+  right: 0;
+}
+
+/* Staff table specific styling */
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.staff-table th, .staff-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.staff-table th {
+  color: white;
+  background-color: #284f61;
+}
