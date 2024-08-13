@@ -1,0 +1,105 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background image */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 80px; /* Add padding to account for fixed header */
+  background-image: url('src/images/Background.jpg'); /* Use the uploaded image as the background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Navbar styling */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(224, 224, 224, 0.8); /* Slight transparency for the header */
+  border-bottom: 2px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dashboard {
+  font-size: 18px;
+}
+
+.search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Center the content */
+.content {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white background for the content */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.consultation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.consultation-table th, .consultation-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Button styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.back-button, .view-staff-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover, .view-staff-button:hover {
+  background-color: #0056b3;
+}
+
+/* Status cell styling */
+.status.in-progress {
+  color: orange;
+}
+
+.status.available {
+  color: green;
+}
